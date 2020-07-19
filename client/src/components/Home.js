@@ -19,7 +19,7 @@ const Home =(props)=>{
 
 		axios.get("https://api.covid19api.com/summary", config)
 				.then(res=>{
-					console.log(res.data.Global)
+					
 					setCovidData(()=>res.data)
 
 				})
