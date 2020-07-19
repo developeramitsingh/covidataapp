@@ -35,7 +35,7 @@ app.use('/auth/post/', require('./routes/api/auth/POSTApi'));
 
 
 if (process.env.NODE_ENV === 'production'){
-  app.use(express.static("client/coviddataapp/build"));
+  app.use(express.static("client/build"));
 
   app.get('*', (req, res)=>{
     res.send(path.resolve(__dirname, 'client', 'coviddataapp', 'build', 'index.html'));
