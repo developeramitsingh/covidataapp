@@ -1,0 +1,63 @@
+body, input, textarea, select, button {    
+    font-family: roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+}
+.loginDiv{
+	margin:auto;	
+	width: 50%;
+	overflow: hidden !important;
+	
+	padding: 60px 40px;
+	text-align: center;
+	margin-top: 50px;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	box-shadow: 0px 0px 50px #0000001A;
+	border-radius: 4px;
+}
+
+
+.FormInput{	
+	border: 1px solid #d1d1d1 !important;
+	border-radius: 8px !important;
+	text-align: center;
+	margin-top: 20px !important;
+	margin-bottom: 20px !important;
+	font-size: 14px;
+}
+.FormInput::placeholder{
+	font-size: 14px;
+	color:#a3a3a3; 	
+}		
+.FormInput:focus{
+	 border: 1px solid #F2C508 !important;
+	 box-shadow: none !important; 
+}
+
+.FormBtn{
+	width: 100% !important;
+	background: #0B1052 !important;
+	padding: 10px !important; 
+	color:#fff;
+	border: none;
+	border-radius: 8px !important;
+}
+
+.success{
+	color:green;
+}
+.LabelLink{	
+	cursor: pointer;
+	color:#0B1052;
+}
+
+.smallHead{
+	color:#0B1052;
+	font-size: 22px;
+}
+
+
+
+@media screen and (max-width: 800px){
+	.loginDiv{
+		width: 100% !important;		
+	}
+}
