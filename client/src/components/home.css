@@ -23,3 +23,9 @@
 	overflow: auto;
 	height: 100vh;
 }
+
+@media screen and (max-width: 800px){
+	.cardCustom{
+		width: 100% !important;		
+	}
+}
