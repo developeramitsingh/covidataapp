@@ -11,6 +11,13 @@
 	color:#F2C508;
 }
 
+.navCustom{
+	background: navy !important;
+}
+
+.nav-wrapper ul{
+	float:right;
+}
 
 .logoutBtn{
 	padding: 20px 50px;

@@ -49,7 +49,7 @@ const Home =(props)=>{
 			</div>
 
 			<div className="row">
-				<div className="col-sm-12">	
+				<div className="col-sm-12 tableCont">	
 					{coviddata?<Covidtable countries={coviddata.Countries}/>:""}
 				</div>
 			</div>

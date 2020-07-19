@@ -7,11 +7,11 @@ import {logoutUser} from '../../actions/authActions';
 
 const Signinlinks  = (props)=>{	
 		return(				
-				<ul >
+				<React.Fragment >
 					
 					<li><span className="userHeading">Welcome {props.user.name}</span></li>	
 					<li><span className="logoutBtn" onClick={props.logoutUser}>Logout</span></li>
-				</ul>
+				</React.Fragment>
 
 			)
 	}	
