@@ -6,7 +6,7 @@ import Covidtable from './covidtable/Covidtable';
 import {Redirect} from 'react-router-dom'
 
 const Home =(props)=>{
-	const [coviddata, setCovidData] = useState(null);
+	const [coviddata, setCovidData] = useState('');
 
 
 	useEffect(()=>{
@@ -33,15 +33,15 @@ const Home =(props)=>{
 					<div className="CasesCont">
 						<div className="card cardCustom z-depth-2">
 							<h5 className="card-title">Active Cases</h5> 
-							<span className="card-data"> {coviddata!=null?coviddata.Global.TotalConfirmed-(coviddata.Global.TotalDeaths+coviddata.Global.TotalRecovered):""}</span>
+							<span className="card-data"> {coviddata!=''?coviddata.Global.TotalConfirmed-(coviddata.Global.TotalDeaths+coviddata.Global.TotalRecovered):""}</span>
 						</div>
 						<div className="card cardCustom z-depth-2">
 							<h5 className="card-title">Total Cases</h5> 
-							<span className="card-data"> {coviddata!=null?coviddata.Global.TotalConfirmed:""}</span>
+							<span className="card-data"> {coviddata!=''?coviddata.Global.TotalConfirmed:""}</span>
 						</div>
 						<div className="card cardCustom z-depth-2">
 							<h5 className="card-title">Total Deaths</h5> 
-							<span className="card-data"> {coviddata!=null?coviddata.Global.TotalDeaths:""}</span>
+							<span className="card-data"> {coviddata!=''?coviddata.Global.TotalDeaths:""}</span>
 						</div>
 					</div>
 

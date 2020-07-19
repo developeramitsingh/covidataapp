@@ -13,7 +13,7 @@ class Navbar extends Component{
 					<div className="container">
 						<div className="nav-wrapper">					      
 					      <ul>
-					      	{this.props.user === null?<SignoutLinks/>:<SigninLinks/>} 	
+					      	{this.props.user === false?<SignoutLinks/>:<SigninLinks/>} 	
 						  </ul>
 					    </div>
 				    </div>

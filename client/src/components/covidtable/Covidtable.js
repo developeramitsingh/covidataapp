@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
 
 const Covidtable =(props)=>{
-	const [tabledata, settableData] = useState(null);
+	const [tabledata, settableData] = useState("");
 
-	let countryWise = tabledata!=null?tabledata.countries.map((country)=>{        
+	let countryWise = tabledata!=""?tabledata.countries.map((country)=>{        
 		return(
 				<tr key={country.CountryCode}>
 					<td>{country.Country}</td>
@@ -34,7 +34,7 @@ const Covidtable =(props)=>{
 						<th>Total Deaths</th>
 						<th>Active Cases</th>
 					</tr>
-					{tabledata!=null?countryWise:null}
+					{tabledata!=""?countryWise:null}
 				</tbody>
 			</table>
 			

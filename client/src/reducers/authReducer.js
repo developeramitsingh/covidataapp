@@ -2,9 +2,9 @@ import { USER_LOADING, USER_LOADED, LOGIN_SUCCESS, SIGNUP_SUCCESS, AUTH_ERROR, L
 
 const initState = {
 	token:localStorage.getItem('token'),
-	isAuthenticated:null,
-	isLoading:null,	
-	user:null,
+	isAuthenticated:false,
+	isLoading:false,	
+	user:false,
 }
 
 const AuthReducer = (state = initState, action)=>{
@@ -42,8 +42,8 @@ const AuthReducer = (state = initState, action)=>{
 			localStorage.removeItem("token");
 			return{
 				...state,
-				token:null,
-				user:null,
+				token:false,
+				user:false,
 				isAuthenticated:false,
 				isLoading:false
 			};

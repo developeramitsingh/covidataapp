@@ -1,9 +1,9 @@
 import { GET_ERRORS, CLEAR_ERRORS } from '../actionTypes/actionTypes';
 
 const initState ={
-	msg:null,
-	status : null,
-	id:null
+	msg:false,
+	status : false,
+	id:false
 }
 
 const ErrorAuthReducer = (state = initState, action) =>{
@@ -18,9 +18,9 @@ const ErrorAuthReducer = (state = initState, action) =>{
 
 		case CLEAR_ERRORS:
 			return {
-				msg:null,
-				status:null,
-				id:null
+				msg:false,
+				status:false,
+				id:false
 			};
 
 		default:
